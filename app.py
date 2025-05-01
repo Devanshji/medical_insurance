@@ -32,4 +32,4 @@ input_df = pd.DataFrame({
 # Prediction
 if st.button('Predict Charges'):
     prediction = model.predict(input_df)[0]
-    st.success(f'Estimated Insurance Charges: ${prediction:.2f}')
+    st.success(f'Estimated Insurance Charges: rs{prediction:.2f}')
